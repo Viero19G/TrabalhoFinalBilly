@@ -56,14 +56,7 @@ Route::prefix('/cidades')->name('cidades.')->group( function(){
     Route::get('/{id}', [CidadesController::class, 'edit'])->name('edit');
 });
 // 
-Route::prefix('/estado')->name('estado.')->group( function(){
-    Route::get('/', [CidadesController::class, 'index'])->name('index');
-    Route::get('/create', [CidadesController::class, 'create'])->name('create');
-    Route::post('/', [CidadesController::class, 'store'])->name('store');
-    Route::put('/{id}', [CidadesController::class, 'update'])->name('update');
-    Route::delete('/{id}', [CidadesController::class, 'destroy'])->name('destroy');
-    Route::get('/{id}', [CidadesController::class, 'edit'])->name('edit');
-});
+
 
 Route::prefix('/torcedor')->name('torcedor.')->group( function(){
     Route::get('/', [CidadesController::class, 'index'])->name('index');
